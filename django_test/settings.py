@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_test',
-        'USER': 'ngrishanov',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'USER': 'django_test',
+        'PASSWORD': 'django_test',
+        'HOST': 'postgres',
         'PORT': '5432',
     }
 }
@@ -124,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'redis://redis:6379'
