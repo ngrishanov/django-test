@@ -6,7 +6,11 @@
 1. Убедитесь, что docker-compose установлен
 2. Выполните `docker-compose up`
 
-После этого API станет доступно по адресу http://localhost:8000, админка — по http://localhost:8000/admin
+После этого API станет доступно по адресу http://localhost:8000, админка — по http://localhost:8000/admin. 
+
+По умолчанию у админа логин `admin`, пароль `12345678`.
+
+Чтобы выполнить тесты, запустите `docker-compose up -d && docker-compose exec django python manage.py test && docker-compose stop`
 
 Как запустить frontend
 ----------
