@@ -13,3 +13,4 @@ class Submission(models.Model):
     internal_id = models.BigIntegerField(unique=True, null=True, blank=True)
     function_code = models.TextField()
     status = models.TextField(choices=StatusEnum.choices, default=StatusEnum.EVALUATION)
+    created_at = models.DateTimeField(auto_now=True)

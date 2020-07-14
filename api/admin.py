@@ -6,6 +6,7 @@ from api.models import Submission
 @admin.register(Submission)
 class SubmissionAdmin(admin.ModelAdmin):
     readonly_fields = ['internal_id', 'function_code', 'status']
+    list_filter = ['status', 'created_at']
 
     def has_delete_permission(self, request, obj=None):
         return False

@@ -30,9 +30,6 @@
 </template>
 
 <script>
-const storedFunctionCode = window.localStorage.getItem('function_code')
-const storedStatus = window.localStorage.getItem('status')
-
 const DEFAULT_CODE = `function sumTwoNumbers(a, b) {
   return 42
 }
@@ -45,6 +42,9 @@ const STATUSES = {
 }
 
 const POLL_INTERVAL = 2000
+
+const storedFunctionCode = window.localStorage.getItem('function_code')
+const storedStatus = window.localStorage.getItem('status')
 
 export default {
   name: 'Main',
