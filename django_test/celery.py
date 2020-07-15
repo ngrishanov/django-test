@@ -20,7 +20,7 @@ app.autodiscover_tasks()
 
 app.conf.beat_schedule = {
     'run-every-5-seconds': {
-        'task': 'api.tasks.update_submissions',
+        'task': 'api.tasks.add_update_submission_tasks',
         'schedule': 5,
     },
 }
